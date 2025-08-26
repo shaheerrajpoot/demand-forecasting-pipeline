@@ -1,0 +1,23 @@
+# Central configuration
+data:
+  raw_path: "data/raw/sales.csv"
+  processed_path: "data/processed/train_processed.parquet"
+  date_col: "date"
+  target_col: "sales"
+  id_cols: ["store_id", "item_id"]
+
+cv:
+  n_splits: 4            # time series splits
+  horizon: 28            # forecast horizon in days
+  min_train_size: 180    # minimum training history (days)
+
+features:
+  lags: [1, 7, 14, 28]
+  rolling_windows: [7, 14, 28]
+  add_calendar: true
+  add_holidays: false
+
+output:
+  metrics_dir: "reports/metrics"
+  figures_dir: "reports/figures"
+  forecasts_dir: "reports"
