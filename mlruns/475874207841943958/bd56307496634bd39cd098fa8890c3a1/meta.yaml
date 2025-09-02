@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Projects/DemandCast/demand_forecasting_pipeline/mlruns/475874207841943958/bd56307496634bd39cd098fa8890c3a1/artifacts
+end_time: 1756233961035
+entry_point_name: ''
+experiment_id: '475874207841943958'
+lifecycle_stage: active
+run_id: bd56307496634bd39cd098fa8890c3a1
+run_name: LGBM_FOODS_3_090_CA_1_validation_rich_features
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756233960348
+status: 3
+tags: []
+user_id: shahe
